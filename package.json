@@ -1,0 +1,14 @@
+{
+  "name": "alinutrition",
+  "version": "1.0.0",
+  "description": "Ali Dorgan's Web App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aidan Dennehy R00145278",
+  "license": "ISC",
+  "dependencies": {
+    "mime-types": "^2.1.27"
+  }
+}
