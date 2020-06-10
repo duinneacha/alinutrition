@@ -2,7 +2,7 @@
 const http = require("http");
 const url = require("url");
 const fs = require("fs");
-const PORT = process.env.PORT || 8082;
+const port = process.env.PORT;
 
 //npm i mime-types
 const lookup = require("mime-types").lookup;
@@ -53,6 +53,6 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, "localhost", () => {
-  console.log(`Listening on port ${PORT}`);
+server.listen(port, () => {
+  console.log(`Listening on port ${port}`);
 });
