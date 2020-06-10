@@ -1,0 +1,392 @@
+
+/* 
+FONTS
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+
+:root {
+  --clr-text: #3D3D3D;
+  --clr-primary: #08C942;
+  --clr-primary-dark: rgb(7, 99, 34);
+  --clr-accent: #088FC9;
+  --clr-accent-dark: rgb(4, 63, 88);
+
+  --ff-title: "Kaushan Script", cursive;
+  --ff-serif: "Crimson Text", serif;
+  --ff-logo: "Chelsea Market", cursive;
+}
+
+/* 
+colour 1: #08C942
+colour 2: #40515E
+colour 3: #6FD32C
+colour 4: #D8D8D8
+colour 5: #C2D6CE
+
+ */
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+  
+
+ html {
+  box-sizing: border-box;
+  font-family: vat(--ff-serif);
+  color: var(--clr-text);
+  font-size: 1.25rem;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+section {
+  padding: 3em 1em;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-family: var(--ff-title);
+  line-height: 0.8;
+  letter-spacing: 1px;;
+}
+
+h2 {
+  font-size: 4rem;;
+}
+
+p {
+  margin-bottom: 0.85em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.text-primary {
+  color: var(--clr-primary);
+}
+
+.intro-text-hero {
+  color: var(--clr-primary);
+}
+
+.logo  {
+  font-family: var(--ff-logo);
+  text-align: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* Navigation */
+
+header {
+  padding: 1em 0 2em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
+
+
+/* Buttons */
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-group__intro {
+
+}
+
+.btn {
+  padding: .75em 2.5em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5em;
+  border-radius: 0.35em;
+}
+
+.btn-accent {
+  background: var(--clr-accent);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  color: var(--clr-accent-dark);
+}
+
+
+.btn-primary {
+  background: var(--clr-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--clr-primary-dark);
+}
+
+.btn + .btn {
+  margin-left: 0.5em;
+}
+
+/* Homepage styles */
+
+.hero {
+  background-color: #333;
+  background-image: url(../img/Capture.PNG);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 15vh 1em;
+}
+
+
+
+.about-me {
+  background: var(--clr-accent);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0;
+}
+
+.about-me__intro {
+  background-image: url(../img/nutrition-slide-2a.jpg);
+  background-size: cover;
+  background-color: #333;
+  background-blend-mode: multiply;
+  padding: 3em 1em 1.5em;
+  
+}
+
+.about-me__intro small {
+  font-size: 0.7em;
+  display: block;
+  
+  /* color: var(--clr-accent); */
+}
+
+.about-me__body {
+       padding: 1.5em 1em 3em;
+}
+
+.order-online {
+  background: #F0F0F0;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+.service {
+  /* background: #f0f0f0; */
+  border-radius: 1em;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+.service:last-of-type {
+  margin-bottom: 2em;
+}
+
+.service__content {
+  padding: 1.5em;
+}
+
+.service__title {
+  color: var(--clr-primary);
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+.fineprint {
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+footer {
+  background: var(--clr-accent-dark);
+  padding: 3em 1em;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+
+
+.footer-social,
+.footer-nav {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.footer-nav a {
+  padding: .75em;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+footer a {
+  color: inherit;
+}
+
+
+
+.social-icon {
+  width: 50px;;
+}
+
+.social-link {
+  display: inline-block;
+  /* padding: .5em; */
+  margin-bottom: .3em;
+}
+
+/* a.social-link {
+  padding-bottom: 1px;
+  margin-bottom: .2em;
+} */
+
+
+@media only screen and (min-width: 750px) {
+  section {
+    padding: 6em 1em;
+  }
+  .btn-group {
+    margin-top: 1em;
+    flex-direction: row;
+  }
+
+  .btn + .btn {
+    margin-left: 0.5em;
+  }
+  .about-me {
+    flex-direction: row;
+  }
+
+  .about-me__intro,
+  .about-me__body {
+    /* padding: 6em 1em 4em; */
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+    justify-content: center;
+  }
+  .about-me__intro {
+    
+    text-align: right;
+    
+  }
+
+  .about-me__intro > * {
+    max-width: 35rem;
+    margin-left: auto;
+  }
+  .about-me__body {
+    text-align: left;
+  }
+
+  .about-me__body > * {
+    max-width: 35rem;
+    margin-right: auto;
+  }
+
+
+  .order-online > * {
+    max-width: 85ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services {
+    flex-direction: row;
+    max-width: 1200px;
+  }
+
+  .service {
+    margin: 0;
+    flex: 0 1 33%;
+  }
+
+  .service + .service {
+    margin-left: 1em;
+  }
+
+  .service h3 {
+    min-height: 2em;
+    
+  }
+
+  .service:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .service__img {
+    height: 20em;
+    width: 20em;
+    padding-bottom: 1em;
+  }
+} /* Media Query */
