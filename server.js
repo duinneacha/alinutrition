@@ -2,7 +2,8 @@
 const http = require("http");
 const url = require("url");
 const fs = require("fs");
-const PORT = 8082;
+const PORT = process.env.PORT || 8082;
+
 //npm i mime-types
 const lookup = require("mime-types").lookup;
 
