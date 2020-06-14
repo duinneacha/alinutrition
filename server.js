@@ -2,11 +2,11 @@
 const http = require("http");
 const url = require("url");
 const fs = require("fs");
-const port = process.env.PORT;
-
+const port = process.env.PORT || 8082;
+console.log(port);
 //npm i mime-types
 const lookup = require("mime-types").lookup;
-
+console.log(lookup);
 const server = http.createServer((req, res) => {
   //handle the request and send back a static file
   //from a folder called `public`
