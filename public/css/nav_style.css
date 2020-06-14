@@ -1,0 +1,121 @@
+
+
+/* Navigation */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+header.top-of-page {
+  font-family: 'Work Sans', sans-serif;
+  background: var(--clr-accent);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+
+
+header {
+  padding: 1em 0 2em;
+}
+
+.logo  {
+  font-family: var(--ff-logo);
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--clr-accent);
+  width: 100%;
+  /* display: none; */
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+ color: white;
+ text-decoration: none;
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ opacity: 0;
+ transition: opacity 150ms ease-in-out 250ms;
+
+}
+
+nav a:hover {
+  color: #000;
+  /* font-weight: 600; */
+}
+
+.nav-toggle-label {
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 1.5em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle:checked ~ nav {
+  /* display: block; */
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
+}
+
+

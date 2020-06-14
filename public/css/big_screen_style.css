@@ -1,0 +1,143 @@
+@media only screen and (min-width: 750px) {
+  section {
+    padding: 6em 1em;
+  }
+  .btn-group {
+    margin-top: 1em;
+    flex-direction: row;
+  }
+
+  .btn + .btn {
+    margin-left: 0.5em;
+  }
+  .about-me {
+    flex-direction: row;
+  }
+
+  .about-me__intro,
+  .about-me__body {
+    /* padding: 6em 1em 4em; */
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em;
+    justify-content: center;
+  }
+  .about-me__intro {
+    
+    text-align: right;
+    
+  }
+
+  .about-me__intro > * {
+    max-width: 35rem;
+    margin-left: auto;
+  }
+  .about-me__body {
+    text-align: left;
+  }
+
+  .about-me__body > * {
+    max-width: 35rem;
+    margin-right: auto;
+  }
+
+
+  .order-online > * {
+    max-width: 85ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services {
+    flex-direction: row;
+    max-width: 1200px;
+  }
+
+  .service {
+    margin: 0;
+    flex: 0 1 33%;
+  }
+
+  .service + .service {
+    margin-left: 1em;
+  }
+
+  .service h3 {
+    min-height: 2em;
+    
+  }
+
+  .service:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .service__img {
+    height: 20em;
+    width: 20em;
+    padding-bottom: 1em;
+  }
+
+ 
+  /* .logo::after {
+    content: 'big screen';
+  } */
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  
+  header.top-of-page {
+    
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    
+  }
+
+  .logo {
+    font-size: 2rem;
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: -.55em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+
+  nav ul {
+    display: flex; 
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+} /* Media Query */
