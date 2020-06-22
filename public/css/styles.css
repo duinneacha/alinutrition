@@ -6,7 +6,8 @@ FONTS
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap'); */
 
 
 :root {
@@ -16,9 +17,15 @@ FONTS
   --clr-accent: #088FC9;
   --clr-accent-dark: rgb(4, 63, 88);
 
-  --ff-title: "Kaushan Script", cursive;
-  --ff-serif: "Crimson Text", serif;
+  --ff-title:  Arial, Helvetica, sans-serif;
+  --ff-serif:  Arial, Helvetica, sans-serif;
+  --ff-logo:  Arial, Helvetica, sans-serif;
+  --ff-paragraph:  Arial, Helvetica, sans-serif;
+
+  /* --ff-title: "Kaushan Script", cursive;
+  --ff-serif: "Source Sans Pro", sans-serif;
   --ff-logo: "Chelsea Market", cursive;
+  --ff-paragraph: "Sedgwick Ave", serif; */
 }
 
 /* 
@@ -38,9 +45,10 @@ colour 5: #C2D6CE
 
  html {
   box-sizing: border-box;
-  font-family: vat(--ff-serif);
+  font-family: var(--ff-paragraph);
   color: var(--clr-text);
   font-size: 1.25rem;
+  background: rgba(0,255,0,0.3);
 }
 
 body {
@@ -82,6 +90,7 @@ h2 {
 
 p {
   margin-bottom: 0.85em;
+  font-family: var(--ff-paragraph);
 }
 
 p:last-child {
@@ -94,6 +103,10 @@ p:last-child {
 
 .intro-text-hero {
   color: var(--clr-primary);
+}
+
+.contact-details {
+  line-height: .5rem;;
 }
 
 
@@ -271,3 +284,19 @@ footer a {
 } */
 
 
+.small-services {
+  
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap:1em;
+      /* grid-auto-rows:100px; */
+  grid-auto-rows: minmax(100px, auto);
+  
+}
+
+.sm-item {
+  background: var(--clr-primary);
+  border-radius: 2%;
+  color: white;
+  justify-items: center;
+}
