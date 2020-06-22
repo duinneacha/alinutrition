@@ -118,4 +118,7 @@ nav a:hover {
   transition: opacity 150ms ease-in-out;
 }
 
+.contact-details {
+  line-height: .5rem;;
+}
 
