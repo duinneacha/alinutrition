@@ -42,7 +42,9 @@
     margin-right: auto;
   }
 
-
+  .intro h2 {
+    font-size: 3rem;
+  }
   .order-online > * {
     max-width: 85ch;
     margin-left: auto;

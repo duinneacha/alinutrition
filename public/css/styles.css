@@ -67,6 +67,10 @@ section {
   padding: 3em 1em;
 }
 
+.section-title {
+  font-size: 3rem;;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -103,6 +107,10 @@ p:last-child {
 
 .intro-text-hero {
   color: var(--clr-primary);
+}
+
+.intro h2 {
+  font-size: 1rem;
 }
 
 
@@ -284,7 +292,7 @@ footer a {
 .small-services {
   
   display: grid;
-  grid-template-columns:repeat(3, 1fr);
+  grid-template-columns:repeat(2, 1fr);
   grid-gap:1em;
       /* grid-auto-rows:100px; */
   grid-auto-rows: minmax(100px, auto);
