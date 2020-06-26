@@ -8,18 +8,49 @@ header.top-of-page {
   font-family: 'Work Sans', sans-serif;
   background: var(--clr-accent);
   position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;;
   z-index: 999;
   width: 100%;
+  margin: 0;
+  top: 0;
 }
 
 
+.contact-details {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: right;
+  font-weight: bold;
+  line-height: .755rem;;
+  font-size: .75rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border: 1px solid red;
+  border-radius: 5px;
+  background: #f4f4f4;
+  display: block;
+  text-align: right;
+  top: 0;
+}
+.navigation {
+  background: green;
+  
+}
 
+.navigation-line {
+  background: yellow;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 header {
   padding: 1em 0 2em;
 }
 
 .logo  {
   font-family: var(--ff-logo);
+  
 }
 
 .logo a {
@@ -27,9 +58,14 @@ header {
   color: black;
 }
 
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
 
 nav {
-  position: absolute;
+  /* position: absolute; */
   text-align: left;
   top: 100%;
   left: 0;
@@ -69,15 +105,16 @@ nav a:hover {
 
 .nav-toggle-label {
   user-select: none;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
-  margin-left: 1em;
+  margin-left: 4em;
 
   /* border: 1px solid red; */
   height: 100%;
   display: flex;
   align-items: center;
+  
 }
 
 .nav-toggle-label span,
@@ -116,9 +153,5 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 150ms ease-in-out;
-}
-
-.contact-details {
-  line-height: .5rem;;
 }
 
