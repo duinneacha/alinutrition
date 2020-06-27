@@ -6,7 +6,8 @@
 
 header.top-of-page {
   font-family: 'Work Sans', sans-serif;
-  background: var(--clr-accent);
+  /* background: var(--clr-accent); */
+  background: #f4f4f4;
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;;
@@ -27,9 +28,9 @@ header.top-of-page {
   padding-right: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-radius: 5px;
-  background: #f4f4f4;
+  
   display: block;
   text-align: right;
   top: 0;
@@ -43,24 +44,31 @@ header.top-of-page {
 
 .logo img {
   width: 50px;
-  height: 50px;
+  height: 100%;
+  margin: auto;
 }
 
-
+.navbar-nav {
+  display: none;
+}
 .navbar{
-  background-color:#3b5998;
+  /* background-color:#3b5998; */
   overflow:hidden;
-  height:63px;
+  height:100%;
+  /* margin: auto; */
+  
 }
 
 .navbar a{
   float:left;
   display:block;
-  color:#f2f2f2;
-  text-align:center;
-  padding:14px 16px;
+  color:black;
+  /* text-align:center; */
+  padding: .2rem .4rem;
+  margin: auto;
   text-decoration:none;
-  font-size:17px;
+  /* font-size:17px; */
+  border: 2px solid black;
 }
 
 .navbar ul{
@@ -71,6 +79,11 @@ header.top-of-page {
 .navbar a:hover{
   background-color:#ddd;
   color:#000;
+}
+
+.open-slide svg {
+  color: black;
+  background: black;
 }
 
 .side-nav{
