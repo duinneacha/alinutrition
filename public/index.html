@@ -45,8 +45,8 @@
             
                 <ul class="navbar-nav">
                   <li><a href="#">Home</a></li>
-                  <li><a href="#about-me">About Me</a></li>
-                  <li><a href="#services-section">Services</a></li>
+                  <li><a href="#about-me" data-scroll>About Me</a></li>
+                  <li><a href="#services-section" data-scroll="">Services</a></li>
                   <li><a href="#">Contact</a></li>
                 </ul>
               </nav>
@@ -63,9 +63,13 @@
     <main>
 
         <div id="side-menu" class="side-nav">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <!-- <a href="" class="btn-close" onclick="closeSlideMenu()">&times;</a> -->
+            
+            
+            <span class="btn-close" id="btn-close">&times;</span>
+            
             <a href="#">Home</a>
-            <a href="#about-me">About Me</a>
+            <a href="#about-me" data-scroll>About Me</a>
             <a href="#services-section">Services</a>
             <a href="#">Contact</a>
           </div>

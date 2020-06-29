@@ -49,6 +49,7 @@ colour 5: #C2D6CE
   color: var(--clr-text);
   font-size: 1.25rem;
   background: rgba(0,255,0,0.3);
+  scroll-behavior: smooth;
 }
 
 body {

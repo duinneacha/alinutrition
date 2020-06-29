@@ -8,7 +8,7 @@ header.top-of-page {
   font-family: 'Work Sans', sans-serif;
   /* background: var(--clr-accent); */
   background: #f4f4f4;
-  position: fixed;
+  /* position: fixed; */
   display: grid;
   grid-template-columns: 1fr 1fr;;
   /* z-index: 999; */
@@ -51,35 +51,6 @@ header.top-of-page {
 .navbar-nav {
   display: none;
 }
-.navbar{
-  /* background-color:#3b5998; */
-  overflow:hidden;
-  height:100%;
-  /* margin: auto; */
-  
-}
-
-.navbar a{
-  float:left;
-  display:block;
-  color:black;
-  /* text-align:center; */
-  padding: .2rem .4rem;
-  margin: auto;
-  text-decoration:none;
-  /* font-size:17px; */
-  border: 2px solid black;
-}
-
-.navbar ul{
-  margin:8px 0 0 0;
-  list-style:none;
-}
-
-.navbar a:hover{
-  background-color:#ddd;
-  color:#000;
-}
 
 .open-slide svg {
   color: black;
@@ -120,3 +91,9 @@ header.top-of-page {
   font-size:36px;
   margin-left:50px;
 }
+
+.btn-close {
+  color: #fff;
+  cursor: pointer;
+}
+
