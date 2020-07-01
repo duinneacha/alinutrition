@@ -306,3 +306,13 @@ footer a {
   color: white;
   justify-items: center;
 }
+
+.material-icons {
+  display: inline;
+  vertical-align: bottom;
+  padding-right: .3rem;
+  padding-top: .5rem;
+  line-height: .7rem;
+  
+  
+}

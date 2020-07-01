@@ -53,8 +53,10 @@ header.top-of-page {
 }
 
 .open-slide svg {
-  color: black;
-  background: black;
+  /* color: white; */
+  /* background: black; */
+  /* border: 1px solid darkgrey; */
+  /* padding: .3rem; */
 }
 
 .side-nav{

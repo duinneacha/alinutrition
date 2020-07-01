@@ -175,6 +175,12 @@
     margin-right: auto;
   }
 
+  .services-section:before {
+    /* padding-top: 2rem; */
+
+    
+  }
+  
   .services {
     flex-direction: row;
     max-width: 1200px;
