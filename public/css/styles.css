@@ -321,3 +321,8 @@ footer a {
   
   
 }
+
+.ali-map {
+  max-width: 100%;
+  min-height: 600px;
+}
