@@ -22,6 +22,12 @@ function closeSlideMenu(event){
   document.getElementById('main').style.marginLeft = '0';
 }
 
+window.onkeyup = function (event) {
+  if (event.keyCode == 27) {
+    sideMenu.style.width = '0';
+  }
+ }
+
 // window.addEventListener('mouseup', function(event){
   
 //   if (event.target != sideMenu && event.target.parentNode != sideMenu){
