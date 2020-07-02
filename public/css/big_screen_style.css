@@ -1,5 +1,13 @@
 @media only screen and (min-width: 750px) {
 
+  body {
+    /* width: 80%; */
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+
   .nav-toggle-label {
     display: none;
   }
@@ -11,6 +19,7 @@
     /* grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; */
     grid-template-columns: 1fr 1fr;
     position: fixed;
+    /* height: 4rem; */
     
   }
 
@@ -153,6 +162,10 @@
     
   }
 
+  .hero {
+    margin-top: 7.5rem;
+    padding: 4rem;
+  }
   .about-me__intro > * {
     max-width: 35rem;
     margin-left: auto;

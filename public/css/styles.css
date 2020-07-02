@@ -53,8 +53,9 @@ colour 5: #C2D6CE
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
+  
 }
 
 
@@ -106,9 +107,6 @@ p:last-child {
   color: var(--clr-primary);
 }
 
-.intro-text-hero {
-  color: var(--clr-primary);
-}
 
 .intro h2 {
   font-size: 1rem;
@@ -171,9 +169,16 @@ p:last-child {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 15vh 1em;
+  padding: 12vh 1em;
 }
 
+.hero h2 {
+  font-size: .8rem5;
+}
+
+.intro-text-hero {
+  color: var(--clr-primary);
+}
 
 
 .about-me {
