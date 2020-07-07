@@ -18,21 +18,7 @@
             <p><i class="material-icons">email</i>alisnutrition@gmail.com</p>
             <p><i class="material-icons">call</i>Tel: 087 7727580</p>
         </div>
-        <!-- <h1 class="logo"><a href="index.html">Ali's Nutrition</a></h1> -->
-        <!-- <div class="navigation-line"> -->
-            <!-- <div class="navigation">
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about-me">About</a></li>
-                        <li><a href="#services-section">Services</a></li>
-                    </ul>
-                </nav>
-                
-            </div> -->
-
+        
             <nav class="navbar">
                 <span class="open-slide">
                   <a href="#" onclick="openSlideMenu()">
@@ -49,6 +35,8 @@
                   <li><a href="#about-me" data-scroll>About Me</a></li>
                   <li><a href="#services-section" data-scroll="">Services</a></li>
                   <li><a href="#">Contact</a></li>
+                  <li><a href="#faqs">FAQ</a></li>
+                  <li><a href="#">Recipes</a></li>
                 </ul>
               </nav>
             
@@ -73,14 +61,19 @@
             <a href="#about-me" data-scroll>About Me</a>
             <a href="#services-section">Services</a>
             <a href="#">Contact</a>
+            <a href="#faqs">FAQ</a>
+            <a href="#">Recipes</a>
+            
           </div>
         
         <section class="hero">
-            <h2 class="section-title">Reach the next level</h2>
+            <h1 class="section-title">NUTRITION & NEUROMUSCULAR SPORTS THERAPIST</h1>
+            <!-- <small><span class="intro-text-hero">Alis Nutrition</span> supports you to reach your health goals with the direction and knowledge of a qualified Professional Nutritional Therapist.</small> -->
         </section>
 
         <section class="intro">
             <h2 class="section-title">
+                <h2 class="section-title">REACH THE NEXT LEVEL</h2>
                 <small><span class="intro-text-hero">Alis Nutrition</span> supports you to reach your health goals with the direction and knowledge of a qualified Professional Nutritional Therapist.</small>
             
             </h2>
@@ -94,7 +87,7 @@
             </header>
             <div class="about-me__body">
                 <p>Hi, I am Ali Dorgan, Nutritional Therapist (Dip NT), member of Nutritional Therapists of Ireland (NTOI) and Thyroid Nutrition Ireland. I am also a Neuromuscular Therapist and work as a hands-on therapist. I offer both of these services in my clinic on a full-time basis.</p>
-                <p>My background in Neuromuscular Sports Therapy stemmed from my own passion in sport. I have a keen interest in mobility and movement with a focus in supporting clients to be able to do return to sport activities or day to day home activities. I work with a hands-on approach using massage techniques, soft tissue mobilisation, dry needling therapy and cupping. I also use stretching and rehab exercises in my practise with clients.</p>
+                <p>My background in Neuromuscular Sports Therapy stemmed from my own passion in sport. I have a keen interest in mobility and movement with a focus in supporting clients to be able to do return to sport activities or day to day home activities. I work with a hands-on approach using massage techniques, soft tissue mobilisation, dry needling therapy and cupping. I also use stretching and rehab exercises in my practice with clients.</p>
                 <p>Nutrition and healthy eating have always been a part of my life from a young age I had an interest in food and how it can benefit our body. My sports background encouraged my interest into further research and led me to study for my own personal interest initially. I enjoy working with clients who have health issues and are willing to make long term changes to improve their health. Some of the areas I work with and have experience in are digestive issues, thyroid health, energy issues/fatigue, sports performance and body composition. I also work with clients who have type 2 diabetes, elevated cholesterol and autoimmune conditions. I have some experience supporting clients who are working towards conception and fertility.</p>
             </div>
 
@@ -117,26 +110,28 @@
                 <h2 class="section-title">Services</h2>
             </header>
             <div class="services">
+
+                <!-- Neuromuscular Sports Therapy -->
                 <div class="service">
                     <img src="img/physiotherapy-image.png" alt="" class="service__img">
                     <div class="service__content">
                         <h3 class="service__title">Neuromuscular Sports Therapy</h3>
                         <p>I have been qualified in Neuromuscular Therapy and Orthopaedic Sports Massage since 2004. I went on to qualify in Dry Needling in April 2018 and Advanced Dry Needling in December 2018. Treatment sessions will range from massage and deep tissue release, dry needling if needed, cupping if needed and mobility and stretching. I will also advise on stretches to do at home and strengthening exercises for you to work on to progress your healing.</p>
-                        <p>You can also book in for assisted stretching sessions (30-minute sessions) if you would like support and guidance with regular stretching and mobility.</p>
-                        <p>I also run regular Mobility and Stretching group classes, keep an eye on the stretching page of the Website.</p>
-                        <p class="fineprint">All children under the age of 16 must be accompanied by a parent or guardian. Children over 16 must have parents’ permission to attend.</p>
+
+                        <div id="nst-more-text" class="hide">
+                           <p>You can also book in for assisted stretching sessions (30-minute sessions) if you would like support and guidance with regular stretching and mobility.</p>
+                           <p>I also run regular Mobility and Stretching group classes, keep an eye on the stretching page of the Website.</p>
+                           <p>Dry needling is a technique using acupuncture needles in the area of a trigger point within a muscle.  The trigger points are little nodules in taut bands of muscle. Taut bands shorten the muscle inhibiting muscle function. Dry needling releases the taut bands and reduces the pain caused by Trigger Points. Dry needling is more specific than trigger point therapy and is very effective with chronic active trigger points. The client will feel a localised twitch response then the dry needle activates the nodule, and this is the process engaging the nervous system to relax the affected area.</p>
+                        <p>Dry needling is very effective for chronic long-term pain, headaches, TMJ, neck and shoulder tension, calf and plantar fascia issues, glute pain, chronic mid and lower back pain.</p>
+                           <p class="fineprint">All children under the age of 16 must be accompanied by a parent or guardian. Children over 16 must have parents’ permission to attend.</p>
+                        </div>
+                        <button id="nst-button" class="more-text-button" onclick="showMoreText_nst()">show more . . .</button>
+                        
+                        
                    </div>
                 </div>
-                <div class="service">
-                    <img src="img/athletic-clipart-nutrition.jpg" alt="" class="service__img">
-                    <div class="service__content">
-                        
-                        <h3 class="service__title">Dry Needling</h3>
-                        <p>Dry needling is a technique using acupuncture needles in the area of a trigger point within a muscle.  The trigger points are little nodules in taut bands of muscle. Taut bands shorten the muscle inhibiting muscle function. Dry needling releases the taut bands and reduces the pain caused by Trigger Points. Dry needling is more specific than trigger point therapy and is very effective with chronic active trigger points. The client will feel a localised twitch response then the dry needle activates the nodule, and this is the process engaging the nervous system to relax the affected area.</p>
-                        <p>Dry needling is very effective for chronic long-term pain, headaches, TMJ, neck and shoulder tension, calf and plantar fascia issues, glute pain, chronic mid and lower back pain.</p>
-                        <p class="fineprint">Fine Print</p>
-                    </div>
-                </div>
+
+                <!-- Nutritional Therapy -->
                 <div class="service">
                     <img src="img/weightloss.jpg" alt="" class="service__img">
                     <div class="service__content">
@@ -146,6 +141,18 @@
                         <p class="fineprint">Fine Print</p>
                     </div>
                 </div>
+
+                <!-- Classes -->
+                <div class="service">
+                    <img src="img/athletic-clipart-nutrition.jpg" alt="" class="service__img">
+                    <div class="service__content">
+                        
+                        <h3 class="service__title">Classes</h3>
+                        
+                        <p class="fineprint">Fine Print</p>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
@@ -207,14 +214,30 @@
                 <a href="#" class="btn btn-accent">See all of our services</a>
             </div>
             <div class="ali-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1742.569011470076!2d-8.311718039676032!3d51.854296742676304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1593671786476!5m2!1sen!2sie" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1742.569011470076!2d-8.311718039676032!3d51.854296742676304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1593671786476!5m2!1sen!2sie" width="100%" height="450" frameborder="0" style="border:1;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <p class="mb-0">Or contact me through one of the following</p>
+
+            <form action="/action_page.php">
+                <label for="fname">Name:</label>
+                <input type="text" id="cname" name="cname" value="">
+                <label for="lname">Email address:</label>
+                <input type="email" id="email" name="email" value="">
+                <label for="message">Message:</label>
+                <input type="textbox" id="message" name="email" value="">
+                
+                <input type="submit" value="Submit">
+              </form> 
+
             <div class="btn-group">
                 <a href="" class="btn btn-primary">Email</a>
                 <a href="" class="btn btn-primary">Facebook</a>
                 <a href="" class="btn btn-primary">Instagram</a>
             </div>
+        </section>
+
+        <section class="faqs" id="faqs">
+            <h3>FAQ's</h3>
         </section>
     </main>
     

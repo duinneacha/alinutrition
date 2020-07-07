@@ -48,7 +48,7 @@ colour 5: #C2D6CE
   font-family: var(--ff-paragraph);
   color: var(--clr-text);
   font-size: 1.25rem;
-  background: rgba(0,255,0,0.3);
+  background: linear-gradient(to left, #a3eeb9 , #f4f6f7);
   scroll-behavior: smooth;
 }
 
@@ -110,6 +110,7 @@ p:last-child {
 
 .intro h2 {
   font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -172,8 +173,8 @@ p:last-child {
   padding: 12vh 1em;
 }
 
-.hero h2 {
-  font-size: .8rem5;
+.hero h1 {
+  font-size: 1.8rem;
 }
 
 .intro-text-hero {
@@ -326,3 +327,31 @@ footer a {
   max-width: 100%;
   min-height: 600px;
 }
+
+.ali-map iframe {
+  max-width: 50%;
+}
+
+button.more-text-button {
+  background:none!important;
+     border:none; 
+     padding:0!important;
+    
+    /*optional*/
+    font-family:arial,sans-serif; /*input has OS specific font-family*/
+     color:#069;
+     cursor:pointer;
+}
+
+button.more-text-button:hover {
+  text-decoration: underline;
+}
+
+#nst-more-text {
+  display: none;
+  /* visibility: hidden; */
+}
+
+/* .hide {
+  display: none;
+} */

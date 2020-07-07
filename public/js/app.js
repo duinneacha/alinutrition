@@ -34,3 +34,20 @@ window.onkeyup = function (event) {
 //       sideMenu.style.display = 'none';
 //   }
 // });
+
+function showMoreText_nst() {
+  
+  const nstMoreText  = document.getElementById('nst-more-text');
+  // let moreButton = document.getElementById('nst-button')
+  // nstMoreText.classList.toggle('hide');
+
+  
+  if (nstMoreText.style.display === 'none' || nstMoreText.style.display === '' ) {
+    nstMoreText.style.display = 'block'
+    document.getElementById('nst-button').innerHTML = 'show less . . .';
+  } else {
+    nstMoreText.style.display = 'none'
+    document.getElementById('nst-button').innerHTML = 'show more . . .';
+  }
+  
+}
