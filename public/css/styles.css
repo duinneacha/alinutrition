@@ -70,7 +70,8 @@ section {
 }
 
 .section-title {
-  font-size: 3rem;;
+  font-size: 3rem;
+  margin-bottom: 1em;
 }
 
 .mb-0 {
