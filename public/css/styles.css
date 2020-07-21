@@ -112,6 +112,7 @@ p:last-child {
 .intro h2 {
   font-size: 1rem;
   padding-bottom: 1rem;
+  line-height: 1.5rem;
 }
 
 
@@ -182,6 +183,21 @@ p:last-child {
   color: var(--clr-primary);
 }
 
+.head-treatments {
+  display: flex;
+  flex-direction: column;
+  background: var(--clr-accent-dark);
+  color: #fff;
+  text-align: left;
+}
+/* 
+.treatments {
+  width: 50%;
+}
+
+.nutrition-head {
+  width: 50%;
+} */
 
 .about-me {
   background: var(--clr-accent);
@@ -243,6 +259,12 @@ p:last-child {
   color: var(--clr-primary);
   font-size: 2rem;
   margin-bottom: .5em;
+}
+
+.service__img {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .fineprint {
@@ -352,6 +374,10 @@ button.more-text-button:hover {
   display: none;
 }
 
+.upcase {
+  text-transform: uppercase;
+  font-weight: 500;
+}
 /* .hide {
   display: none;
 } */
