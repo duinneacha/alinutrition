@@ -180,6 +180,10 @@
     margin-top: 7.5rem;
     padding: 4rem;
   }
+
+  .span-new-line {
+    display: block;
+  }
   .about-me__intro > * {
     max-width: 35rem;
     margin-left: auto;

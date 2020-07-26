@@ -7,6 +7,7 @@ FONTS
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap'); */
 
 
@@ -16,11 +17,17 @@ FONTS
   --clr-primary-dark: rgb(7, 99, 34);
   --clr-accent: #088FC9;
   --clr-accent-dark: rgb(4, 63, 88);
+  
+  
+  --ff-title:  'Nunito', sans-serif;
+  --ff-serif:  'Nunito', sans-serif;
+  --ff-logo:  'Nunito', sans-serif;
+  --ff-paragraph:  'Nunito', sans-serif;
 
-  --ff-title:  Arial, Helvetica, sans-serif;
+  /* --ff-title:  Arial, Helvetica, sans-serif;
   --ff-serif:  Arial, Helvetica, sans-serif;
   --ff-logo:  Arial, Helvetica, sans-serif;
-  --ff-paragraph:  Arial, Helvetica, sans-serif;
+  --ff-paragraph:  Arial, Helvetica, sans-serif; */
 
   /* --ff-title: "Kaushan Script", cursive;
   --ff-serif: "Source Sans Pro", sans-serif;
@@ -70,8 +77,12 @@ section {
 }
 
 .section-title {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   margin-bottom: 1em;
+}
+
+.intro-subheadline {
+  font-weight: bold;
 }
 
 .mb-0 {
@@ -172,13 +183,35 @@ p:last-child {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 12vh 1em;
+  padding: 2vh 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero h1 {
   font-size: 1.8rem;
 }
 
+.hero h2 {
+  font-size: 1.4rem;
+}
+
+.hero-img {
+  height: auto;
+  min-height: 150px;
+  max-height: 300px;
+  width: 100%;
+  min-width: 150px;
+  max-width: 400px;
+  border-radius: 5%;
+  padding: 1rem;
+}
+
+.hero-title {
+  /* display: flex; */
+  /* align-items: flex-start; */
+  text-align: left;
+}
 .intro-text-hero {
   color: var(--clr-primary);
 }
