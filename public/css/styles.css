@@ -423,9 +423,9 @@ button.more-text-button:hover {
 }
 
 .accordian {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 1.5em;
+  padding: 0 .5em;
 }
 
 .accordian-item {
@@ -480,7 +480,7 @@ button.more-text-button:hover {
 }
 
 .answer p {
-  font-size: 1.1em;
+  font-size: .8em;
   color: rgba(255, 255, 255, 0.6);
   padding: 1em;
 }
