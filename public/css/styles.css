@@ -222,6 +222,7 @@ p:last-child {
   background: var(--clr-accent-dark);
   color: #fff;
   text-align: left;
+  padding: 3em;
 }
 /* 
 .treatments {
@@ -411,6 +412,93 @@ button.more-text-button:hover {
   text-transform: uppercase;
   font-weight: 500;
 }
+
+
+.faqs .container {
+  background: var(--clr-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.accordian {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.accordian-item {
+  background-color: #283042;
+  color: #fff;
+  border-radius: .4em;
+  margin-bottom: .5em;
+  padding: 1em;
+  box-shadow: .5em 2px .5em rgba(0, 0, 0, 0.1);
+
+}
+
+.accordian-link {
+  text-decoration: none;
+  color: #dbecf5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+.accordian-link i {
+  color: pink;
+  padding: .5em;
+}
+
+.accordian-link .remove-answer {
+  display: none;
+}
+
+.answer {
+
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #212838;
+  transition: max-height 650ms;
+  
+}
+
+.answer::before {
+  content: '';
+  position: absolute;
+  width: .3em;
+  height: 90%;
+  margin-right: .4em;
+  background-color: #8fc460;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.answer p {
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 1em;
+}
+
+.accordian-item:target .answer {
+  max-height: 40em;
+}
+
+.accordian-item:target .accordian-link .add-answer {
+  display: none;
+}
+
+.accordian-item:target .accordian-link .remove-answer {
+  display: block;
+}
+
+
+
 /* .hide {
   display: none;
 } */

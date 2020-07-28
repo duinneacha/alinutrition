@@ -181,6 +181,10 @@
     padding: 4rem;
   }
 
+  .hero-title {
+    width: 60%;
+  }
+
   .span-new-line {
     display: block;
   }
@@ -207,11 +211,7 @@
     margin-right: auto;
   }
 
-  .services-section:before {
-    /* padding-top: 2rem; */
-
-    
-  }
+  
   
   .services {
     flex-direction: row;
