@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/nav_style.css">
-    <link rel="stylesheet" href="css/big_screen_style.css">
+    <!-- <link rel="stylesheet" href="css/nav_style.css"> -->
+    <!-- <link rel="stylesheet" href="css/big_screen_style.css"> -->
     <title>Ali's Nutrition</title>
     <script src="js/serviceCard.js"></script>
 </head>
 <body>
+    
     <header class="top-of-page">
-        
+        <ali-navbar/>    
         <div class="contact-details">
             <p>Ali (Anneline) Dorgan</p>
             <p><i class="material-icons">email</i>alisnutrition@gmail.com</p>
             <p><i class="material-icons">call</i>Tel: 087 7727580</p>
         </div>
         
-            <nav class="navbar">
+        
+
+
+            <!-- <nav class="navbar">
                 <span class="open-slide">
                   <a href="#" onclick="openSlideMenu()">
                     <svg width="30" height="30">
@@ -33,13 +37,21 @@
                 <ul class="navbar-nav">
                   <li><a href="/index.html">Home</a></li>
                   <li><a href="/about.html" data-scroll>About Ali</a></li>
-                  <li><a href="#services-section" data-scroll="">Services</a></li>
+                  <li class="services-sub-menu"><a href="#services-section" data-scroll="">Services <i class="material-icons">arrow_drop_down</i></a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Neuromuscular</a></li>
+                            <li><a href="#">Nutritional</a></li>
+                            <li><a href="#">Classes</a></li>
+                        </ul>
+                    </div>
+                  </li>
                   <li><a href="#">Contact</a></li>
                   <li><a href="#faqs">FAQ</a></li>
                   <li><a href="#">Recipes</a></li>
                 </ul>
               </nav>
-            
+             -->
             <div class="logo">
                 <img src="img/acorn-temp-logo.png" alt="">
             </div>
@@ -51,8 +63,7 @@
     </header>
     <main>
 
-        <div id="side-menu" class="side-nav">
-            <!-- <a href="" class="btn-close" onclick="closeSlideMenu()">&times;</a> -->
+        <!-- <div id="side-menu" class="side-nav">
             
             
             <span class="btn-close" id="btn-close">&times;</span>
@@ -64,7 +75,7 @@
             <a href="#faqs">FAQ</a>
             <a href="#">Recipes</a>
             
-          </div>
+          </div> -->
         
         <section class="hero">
             <div class="hero-text">
@@ -315,5 +326,6 @@
     
 
 <script src="js/app.js"></script>
+<script src="js/alinavbar.js"></script>
 </body>
 </html>

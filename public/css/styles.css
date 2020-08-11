@@ -234,7 +234,7 @@ p:last-child {
 } */
 
 .about-me {
-  background: var(--clr-accent);
+  background: var(--clr-primary);
   display: flex;
   flex-direction: column;
   color: white;
@@ -374,6 +374,7 @@ footer a {
   display: inline;
   vertical-align: bottom;
   padding-right: .3rem;
+  padding-left: .01rem;
   padding-top: .5rem;
   line-height: .7rem;
   
